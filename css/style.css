@@ -12,11 +12,11 @@ body {
   line-height: 1.6;
   margin: 0 !important;
 
-  background: #fcfcfc url(../images/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #fcfcfc url(../images/bg.jpg) no-repeat top left fixed;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 }
 body.admin-menu.adminimal-menu {
     margin-top: 1.5em !important;
@@ -28,19 +28,21 @@ body.admin-menu.adminimal-menu {
   padding: 2% 5% !important;
 }
 header, .navigation-region, .page, footer {
-  background: none repeat scroll 0 0 #fcfcfc;
   /*max-width: 1400px;
   margin: 0 auto;*/
 }
 footer {
-  margin-bottom: 110px !important;
-  border: 2px solid #fcfcfc;
+  position: fixed;
+  bottom: 0em;
+  width: 100%;
+  border: 0px solid #fcfcfc;
+  background: rgba(255,255,255,.7);
+  text-align: left;
 }
 header[role="banner"] {
   margin-top: 0;
   border: 0;
   line-height: 0;
-  background: #fcfcfc;
   position: relative;
 }
 .header-region {
@@ -54,14 +56,17 @@ header[role="banner"] {
 .navigation-region {
   padding: 0 2% 0 2.9%;
   display: table;
-  border-bottom: 2px solid #fcfcfc;
-  border-top: 2px solid #fcfcfc;
+  border-bottom: 0px solid #fcfcfc;
+  border-top: 0px solid #fcfcfc;
 }
 #main-content,
 div.sidebar-first,
 div.sidebar-second {
   padding: 2% 0 2% 5%;
   border: 0;
+}
+header[role="contentinfo"] {
+  width: 100%;
 }
 
 /* Typography */
