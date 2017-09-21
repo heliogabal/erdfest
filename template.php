@@ -4,12 +4,12 @@
 */
 
 /*
-function enlivenment_preprocess_html(&$vars) {
+function erdfest_preprocess_html(&$vars) {
   //  kpr($vars['content']);
 }
 */
 /*
-function enlivenment_preprocess_page(&$vars,$hook) {
+function erdfest_preprocess_page(&$vars,$hook) {
   //typekit
   //drupal_add_js('http://use.typekit.com/XXX.js', 'external');
   //drupal_add_js('try{Typekit.load();}catch(e){}', array('type' => 'inline'));
@@ -23,12 +23,12 @@ function enlivenment_preprocess_page(&$vars,$hook) {
 }
 */
 /*
-function enlivenment_preprocess_region(&$vars,$hook) {
+function erdfest_preprocess_region(&$vars,$hook) {
   //  kpr($vars['content']);
 }
 */
 /*
-function enlivenment_preprocess_block(&$vars, $hook) {
+function erdfest_preprocess_block(&$vars, $hook) {
   //  kpr($vars['content']);
 
   //lets look for unique block in a region $region-$blockcreator-$delta
@@ -68,7 +68,7 @@ function enlivenment_preprocess_block(&$vars, $hook) {
 }
 */
 /*
-function enlivenment_preprocess_node(&$vars,$hook) {
+function erdfest_preprocess_node(&$vars,$hook) {
   //  kpr($vars['content']);
 
   // add a nodeblock
@@ -78,12 +78,12 @@ function enlivenment_preprocess_node(&$vars,$hook) {
 }
 */
 /*
-function enlivenment_preprocess_comment(&$vars,$hook) {
+function erdfest_preprocess_comment(&$vars,$hook) {
   //  kpr($vars['content']);
 }
 */
 /*
-function enlivenment_preprocess_field(&$vars,$hook) {
+function erdfest_preprocess_field(&$vars,$hook) {
   //  kpr($vars['content']);
   //add class to a specific field
   switch ($vars['element']['#field_name']) {
@@ -104,12 +104,12 @@ function enlivenment_preprocess_field(&$vars,$hook) {
 }
 */
 /*
-function enlivenment_preprocess_maintenance_page(){
+function erdfest_preprocess_maintenance_page(){
   //  kpr($vars['content']);
 }
 */
 /*
-function enlivenment_form_alter(&$form, &$form_state, $form_id) {
+function erdfest_form_alter(&$form, &$form_state, $form_id) {
   //if ($form_id == '') {
   //....
   //}
@@ -119,7 +119,7 @@ function enlivenment_form_alter(&$form, &$form_state, $form_id) {
 /**
  * Implements hook_preprocess_html().
  */
-function enlivenment_preprocess_html(&$vars) {
+function erdfest_preprocess_html(&$vars) {
   $prefixes = array();
   $namespaces = explode("n", trim($vars['rdf_namespaces']));
   foreach ($namespaces as $name) {

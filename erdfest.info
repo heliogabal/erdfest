@@ -1,4 +1,4 @@
-name = Enlivenment
+name = Erdfest
 description = based on mothership
 screenshot = screenshot.png
 engine = phptemplate
@@ -37,7 +37,7 @@ regions[footer] = Footer
 
 
 ;-------------- C S S -------------
-stylesheets[all][] = css/enlivenment_layout.css
+stylesheets[all][] = css/erdfest_layout.css
 stylesheets[all][] = css/style.css
 
 

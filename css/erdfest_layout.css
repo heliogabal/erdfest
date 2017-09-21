@@ -15,24 +15,22 @@ img{
 
 /* colors */
 body{ background-color: #fcfcfc; color: #300; margin:20px 0 }
-.page{ border-left: 2px solid #fff;  border-right: 2px solid #fff; border-bottom: 0;}
+.page{ border:0;}
 body.sidebar-first div[role="main"] { border-left: 0px solid #eee; }
 body.sidebar-second div[role="main"]{ border-right: 0px solid #eee; }
 body.two-sidebars div[role="main"]  { border-left: 0px solid #eee; border-right: 0px solid #eee; }
 
 .siteinfo {
-  margin: 25% 0 0 4%;
-  position: absolute;
-  bottom: 3em;
+  margin: 5% !important;
   z-index: 10;
-  width: 95% !important;
+  width: 90% !important;
 }
   .siteinfo figure { display:block; }
-  .siteinfo h1 { font-size:2em; line-height:1.22em; text-transform: none; color: #c00; padding: 0; display: inline; background: rgba(255, 255, 255, 0.60); }
+  .siteinfo h1 { font-size:2em; line-height:1.22em; text-transform: none; color: #c00; padding: 0; display: inline; background: rgba(255, 255, 255, 0.60); display:none; }
   .siteinfo h2 { font-size:1em}
 
 footer[role="contentinfo"]{ text-align:center;}
-header[role="banner"],.navigation-region, .page, footer[role="contentinfo"]{ width: 95%;  margin: 0 auto; }
+header[role="banner"],.navigation-region, .page, footer[role="contentinfo"]{ width: 100%;  margin: 0 auto; }
 .navigation-region nav ul {padding:0}
 .navigation-region nav li { display: inline-block;}
 .navigation-region nav, .navigation-region div, .header-region div{float:left}

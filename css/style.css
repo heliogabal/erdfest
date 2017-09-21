@@ -7,13 +7,20 @@ html {
 }
 
 body {
-  background: #300;/*#0489B1*/
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 100%;
   line-height: 1.6;
   margin: 0 !important;
-}
 
+  background: #fcfcfc url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body.admin-menu.adminimal-menu {
+    margin-top: 1.5em !important;
+}
 /* Layout */
 #main-content, div.sidebar-first, div.sidebar-second {
   float: none;
@@ -22,18 +29,18 @@ body {
 }
 header, .navigation-region, .page, footer {
   background: none repeat scroll 0 0 #fcfcfc;
-  max-width: 1400px;
-  margin: 0 auto;
+  /*max-width: 1400px;
+  margin: 0 auto;*/
 }
 footer {
   margin-bottom: 110px !important;
-  border: 2px solid #fff;
+  border: 2px solid #fcfcfc;
 }
 header[role="banner"] {
   margin-top: 0;
   border: 0;
   line-height: 0;
-  background: #fff;
+  background: #fcfcfc;
   position: relative;
 }
 .header-region {
@@ -47,8 +54,8 @@ header[role="banner"] {
 .navigation-region {
   padding: 0 2% 0 2.9%;
   display: table;
-  border-bottom: 2px solid #fff;
-  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fcfcfc;
+  border-top: 2px solid #fcfcfc;
 }
 #main-content,
 div.sidebar-first,
@@ -584,6 +591,22 @@ label {
 .flexslider {
   border: 0;
   margin-bottom: 0;
+}
+
+/* Kartendesign */
+.group-card {
+    float: left;
+    max-width: 45%;
+    margin: 0 5% 3em 0;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(68,68,68,1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(68,68,68,1);
+    box-shadow: 3px 3px 5px 0px rgba(68,68,68,1);
+    padding: 1em;
+    border-radius: 3px;
+    border: 1px solid #eee;
+}
+.group-card:nth-of-type(3n) {
+  clear:left;
 }
 
 @media only screen and (min-width : 768px) {
